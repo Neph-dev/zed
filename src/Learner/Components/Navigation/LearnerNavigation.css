@@ -1,0 +1,51 @@
+#LearnerNavigation {
+    background: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    height: 100%;
+    left: 0;
+    margin-top: 3.8rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    width: 5rem;
+}
+
+.LearnerNavigation-list-content {
+    display: block;
+}
+
+.LearnerNavigation-list-el-active {
+    align-items: center;
+    background: #4e5180;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    color: #ffffff;
+    cursor: pointer;
+    justify-content: center;
+    padding: 1rem;
+} 
+.LearnerNavigation-list-el {
+    align-items: center;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    color: #126180;
+    cursor: pointer;
+    justify-content: center;
+    padding: 1rem;
+}
+.LearnerNavigation-list-el:hover {
+    background: #4e5180;
+    color: #ffffff;
+}
+.LearnerNavigation-list-icon {
+    display: flex;
+    margin: auto;
+}
+.LearnerNavigation-list-label {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
