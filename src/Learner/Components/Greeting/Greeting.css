@@ -1,0 +1,17 @@
+#Greeting {
+    align-items: center;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 6rem;
+}
+.Greeting-greeting {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.Greeting-date {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-right: 2rem; 
+}

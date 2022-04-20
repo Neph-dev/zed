@@ -1,21 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Helmet } from 'react-helmet-async';
 
 // Import styling components.
-import './LearnerHome.css';
 import '../../Components/LearnerPagesCss/LearnerPages.css';
+import './LearnerCourses.css';
 
 import LearnerHeader from '../../Components/Header';
 import MyCoursesComponent from '../../Components/MyCoursesComponent';
-import DailyView from '../../Components/CalendarViews/DailyView';
-import Greeting from '../../Components/Greeting';
 
 
-function LearnerHome() {
+function LearnerCourses() {
 
-    const activeNav = 'home'
-
+    const activeNav = 'courses'
 
     //automatically scroll to top
     useEffect(() => {
@@ -26,29 +23,22 @@ function LearnerHome() {
         <div id='LearnerPages'>
 
             <Helmet>
-                <title>Welcome to Zed</title>
+                <title>My Courses || Zed</title>
                 <meta
                     name="description"
                     content=""
                     data-rh="true"
                 />
-                <link rel='canonical' href='/' />
+                <link rel='canonical' href='/learner-courses' />
             </Helmet>
 
             <LearnerHeader activeNav={activeNav} />
 
             <div className='learnerPagesContent'>
-
-                <Greeting />
-
-                <DailyView />
-
                 <MyCoursesComponent />
-
             </div>
-
         </div>
     );
 }
 
-export default LearnerHome;
+export default LearnerCourses;

@@ -14,7 +14,7 @@ import { CgDarkMode } from 'react-icons/cg';
 import LearnerNavigation from '../Navigation';
 
 
-function LearnerHeader() {
+function LearnerHeader({ activeNav }) {
 
     const [showNotificationDropdown, setShowNotificationDropdown] = useState(false)
     const [showMoreDropdown, setShowMoreDropdown] = useState(false)
@@ -30,7 +30,7 @@ function LearnerHeader() {
     const moreRef = useDetectClickOutside({ onTriggered: closeMoreDropdown });
 
     return (
-        <>
+        <div>
             <div id='LearnerHeader'>
 
                 <div className='LearnerHeader-list-container'>
@@ -113,8 +113,8 @@ function LearnerHeader() {
 
             </div>
 
-            <LearnerNavigation />
-        </>
+            <LearnerNavigation activeNav={activeNav} />
+        </div>
     );
 }
 
