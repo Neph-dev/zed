@@ -1,0 +1,71 @@
+#ChDiscussion {
+    color: #000000;
+    cursor: context-menu;
+    height: 90vh;
+    width: 100%;
+}
+.ChDiscussion-title {
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.ChDiscussion-cards {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem auto auto auto;
+    width: 80%;
+}
+.ChDiscussion-card-direction {
+    background-color: #e30022;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 12rem;
+    margin-bottom: 1rem;
+    transition: transform .2s;
+    width: 11rem;
+}
+.ChDiscussion-card-direction:hover {
+    transform: scale(1.05);
+}
+.ChDiscussion-card {
+    background-color: #126180;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 12rem;
+    margin-bottom: 1rem;
+    transition: transform .2s;
+    width: 11rem;
+}
+.ChDiscussion-card:hover {
+    transform: scale(1.05);
+}
+.ChDiscussion-card-number {
+    font-size: 13px;
+    background-color: #537989;
+    border-radius: 50px;
+    color: #ffffff;
+    float: right;
+    margin: .5rem;
+    padding: .3rem;
+}
+.ChDiscussion-card-title {
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ChDiscussion-card-people {
+    color: #cccccc;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-right: 1rem;
+    float: right;
+}

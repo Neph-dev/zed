@@ -12,3 +12,54 @@
     text-transform: capitalize;
     text-align: center;
 }
+
+.Marks-subject_average {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5rem;
+}
+
+.Marks-subject-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #cccccc;
+    height: 3rem;
+    width: 50vh;
+}
+.Marks-subject-title {
+    font-size: 18px;
+}
+.Marks-subject-title:hover {
+    color: #126180;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.Marks-subject-mark {
+    align-items: center;
+    font-size: 18px;
+    margin-left: 2rem;
+    display: flex;
+}
+
+.Marks-circular-progressbar {
+    cursor: context-menu;
+    height: 10rem;    
+    margin-top: 2rem;
+}
+
+/* icons */
+.Marks-BiUpArrowAlt {
+    color: #00ad43;
+}
+.Marks-BiDownArrowAlt {
+    color: #fe2712;
+}
+.Marks-BiRightArrowAlt {
+    color: #000000;
+}
+.Marks-GoPrimitiveDot {
+    color: #000000;
+}

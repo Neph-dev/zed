@@ -66,19 +66,29 @@ function LearnerNavigation({ activeNav }) {
                     </div>
                 </a>
 
-                <div className='LearnerNavigation-list-el'>
-                    <SiGooglemessages
-                        size={25}
-                        className='LearnerNavigation-list-icon' />
-                    <div className='LearnerNavigation-list-label'>Message</div>
-                </div>
+                <a href='/Learner-messages'>
+                    <div className={
+                        activeNav === 'messages' ?
+                            'LearnerNavigation-list-el-active'
+                            : 'LearnerNavigation-list-el'}>
+                        <SiGooglemessages
+                            size={25}
+                            className='LearnerNavigation-list-icon' />
+                        <div className='LearnerNavigation-list-label'>Message</div>
+                    </div>
+                </a>
 
-                <div className='LearnerNavigation-list-el'>
-                    <MdAccountCircle
-                        size={25}
-                        className='LearnerNavigation-list-icon' />
-                    <div className='LearnerNavigation-list-label'>Account</div>
-                </div>
+                <a href='/Learner-messages'>
+                    <div className={
+                        activeNav === 'account' ?
+                            'LearnerNavigation-list-el-active'
+                            : 'LearnerNavigation-list-el'}>
+                        <MdAccountCircle
+                            size={25}
+                            className='LearnerNavigation-list-icon' />
+                        <div className='LearnerNavigation-list-label'>Account</div>
+                    </div>
+                </a>
 
             </div>
 
