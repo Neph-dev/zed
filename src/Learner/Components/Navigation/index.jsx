@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 // Import styling components.
 import './LearnerNavigation.css';
 
@@ -20,7 +18,7 @@ function LearnerNavigation({ activeNav }) {
 
             <div className='LearnerNavigation-list-content'>
 
-                <Link to='/'>
+                <a href='/'>
                     <div className={
                         activeNav === 'home' ?
                             'LearnerNavigation-list-el-active'
@@ -30,9 +28,9 @@ function LearnerNavigation({ activeNav }) {
                             className='LearnerNavigation-list-icon' />
                         <div className='LearnerNavigation-list-label'>Home</div>
                     </div>
-                </Link>
+                </a>
 
-                <Link to='/learner-courses'>
+                <a href='/Learner-courses'>
                     <div className={
                         activeNav === 'courses' ?
                             'LearnerNavigation-list-el-active'
@@ -42,21 +40,31 @@ function LearnerNavigation({ activeNav }) {
                             className='LearnerNavigation-list-icon' />
                         <div className='LearnerNavigation-list-label'>Courses</div>
                     </div>
-                </Link>
+                </a>
 
-                <div className='LearnerNavigation-list-el'>
-                    <BsCalendar2Range
-                        size={25}
-                        className='LearnerNavigation-list-icon' />
-                    <div className='LearnerNavigation-list-label'>Calendar</div>
-                </div>
+                <a href='/Learner-calendar'>
+                    <div className={
+                        activeNav === 'calendar' ?
+                            'LearnerNavigation-list-el-active'
+                            : 'LearnerNavigation-list-el'}>
+                        <BsCalendar2Range
+                            size={25}
+                            className='LearnerNavigation-list-icon' />
+                        <div className='LearnerNavigation-list-label'>Calendar</div>
+                    </div>
+                </a>
 
-                <div className='LearnerNavigation-list-el'>
-                    <GiCheckMark
-                        size={25}
-                        className='LearnerNavigation-list-icon' />
-                    <div className='LearnerNavigation-list-label'>Marks</div>
-                </div>
+                <a href='/Learner-marks'>
+                    <div className={
+                        activeNav === 'marks' ?
+                            'LearnerNavigation-list-el-active'
+                            : 'LearnerNavigation-list-el'}>
+                        <GiCheckMark
+                            size={25}
+                            className='LearnerNavigation-list-icon' />
+                        <div className='LearnerNavigation-list-label'>Marks</div>
+                    </div>
+                </a>
 
                 <div className='LearnerNavigation-list-el'>
                     <SiGooglemessages

@@ -1,23 +1,18 @@
 import React, { useEffect, useState } from 'react';
 
-import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 // Import styling components.
+import './LearnerCalendar.css';
 import '../../Components/LearnerPagesCss/LearnerPages.css';
-import './LearnerCourses.css';
 
 import LearnerHeader from '../../Components/Header';
-import MyCoursesComponent from '../../Components/MyCoursesComponent';
+import Day from '../../Components/CalendarViews/Day';
 
 
-function LearnerCourses() {
+function LearnerCalendar() {
 
-    const activeNav = 'courses';
-
-    //automatically scroll to top
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    const activeNav = 'calendar'
 
     return (
         <div id='LearnerPages'>
@@ -26,11 +21,11 @@ function LearnerCourses() {
 
             <div className='learnerPagesContent'>
 
-                <MyCoursesComponent />
+                <Day />
 
             </div>
         </div>
     );
 }
 
-export default LearnerCourses;
+export default LearnerCalendar;

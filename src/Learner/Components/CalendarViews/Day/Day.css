@@ -1,0 +1,85 @@
+#Day {
+    margin-top: 10vh;
+    color: #000000;
+    cursor: context-menu;
+    display: block;
+    height: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.Day-day-label {
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.Day-calendar {
+    align-items: center;
+    color: #000000;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+}
+
+.Day-hour_activity {
+    display: flex;
+    height: 3.5rem;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.Day-hour {
+    align-items: center;
+    background: #B06AB3;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+}
+
+/* Activity */
+.Day-activity-container {
+    display: block;
+    width: 100%;
+}
+.Day-activity-full {
+    align-items: center;
+    background: #4568DC;
+    color: #FFFFFF;
+    display: flex;
+    height: 100%;
+    padding-left: 2rem;
+}
+.Day-activity-half {
+    align-items: center;
+    background: #4568DC;
+    color: #FFFFFF;
+    display: flex;
+    height: 49%;
+    padding-left: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.Day-activity-half-canceled {
+    filter: brightness(.5);
+    align-items: center;
+    background: #dc4545;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    height: 49%;
+    padding-left: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+.Day-cancel-label {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-right: 2rem;
+}

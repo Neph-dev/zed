@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from 'react';
 
-import { Helmet } from 'react-helmet-async';
-
 // Import styling components.
+import './Marks.css';
 import '../../Components/LearnerPagesCss/LearnerPages.css';
-import './LearnerCourses.css';
 
 import LearnerHeader from '../../Components/Header';
-import MyCoursesComponent from '../../Components/MyCoursesComponent';
+import MarksComponent from '../../Components/MarksComponent';
 
 
-function LearnerCourses() {
+function LearnerMarks() {
 
-    const activeNav = 'courses';
+    const activeNav = 'marks';
 
     //automatically scroll to top
     useEffect(() => {
@@ -26,11 +24,12 @@ function LearnerCourses() {
 
             <div className='learnerPagesContent'>
 
-                <MyCoursesComponent />
+                <MarksComponent />
 
             </div>
+
         </div>
     );
 }
 
-export default LearnerCourses;
+export default LearnerMarks;

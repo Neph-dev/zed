@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Helmet } from 'react-helmet-async';
 
@@ -10,12 +10,12 @@ import LearnerHeader from '../../Components/Header';
 import MyCoursesComponent from '../../Components/MyCoursesComponent';
 import DailyView from '../../Components/CalendarViews/DailyView';
 import Greeting from '../../Components/Greeting';
+import Day from '../../Components/CalendarViews/Day';
 
 
 function LearnerHome() {
 
     const activeNav = 'home'
-
 
     //automatically scroll to top
     useEffect(() => {
@@ -41,7 +41,8 @@ function LearnerHome() {
 
                 <Greeting />
 
-                <DailyView />
+                <Day />
+                {/* <DailyView /> */}
 
                 <MyCoursesComponent />
 
