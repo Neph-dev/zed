@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { courseList } from '../../Mock';
+
 // react-circular-progressbar
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -12,27 +14,9 @@ import './MarksComponent.css';
 
 function MarksComponent() {
 
-    const marksData = [
-        {
-            value: 'Mathmatics',
-            mark: 0
-        },
-        {
-            value: 'Physics',
-            mark: 0
-        },
-        {
-            value: 'French',
-            mark: 0
-        },
-        {
-            value: 'English',
-            mark: 0
-        },
-    ]
     // Calculate the sum of all marks and divide it by the length of all added marks 
     //to find the average mark in percentage.
-    let averageMarksPercentage = marksData.reduce((acc, el) => acc + el.mark, 0) / marksData.length
+    let averageMarksPercentage = courseList.reduce((acc, el) => acc + el.mark, 0) / courseList.length
 
 
     return (
@@ -45,10 +29,10 @@ function MarksComponent() {
             <div className='Marks-subject_average'>
                 <div>
                     {
-                        marksData.map((mark) => (
+                        courseList.map((mark) => (
                             <div className='Marks-subject-container'>
                                 <div className='Marks-subject-title'>
-                                    {mark.value}
+                                    {mark.title}
                                 </div>
                                 <div className='Marks-subject-mark'>
                                     {mark.mark}% <BiUpArrowAlt

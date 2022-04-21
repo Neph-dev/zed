@@ -1,10 +1,13 @@
 import React from 'react';
 
+import { courseList } from '../../Mock';
+
 import './MyCoursesComponent.css';
 
 
 
 function MyCoursesComponent() {
+
     return (
         <section id='myCourses'>
 
@@ -12,36 +15,18 @@ function MyCoursesComponent() {
                 My Courses
             </div>
             <div className='myCourses-cards'>
-                <div className='myCourses-card'>
-                    <div className='myCourses-card-subject'>
-                        Mathmatics
-                    </div>
-                </div>
-                <div className='myCourses-card'>
-                    <div className='myCourses-card-subject'>
-                        Physics
-                    </div>
-                </div>
-                <div className='myCourses-card'>
-                    <div className='myCourses-card-subject'>
-                        French
-                    </div>
-                </div>
-                <div className='myCourses-card'>
-                    <div className='myCourses-card-subject'>
-                        Chemestry
-                    </div>
-                </div>
-                <div className='myCourses-card'>
-                    <div className='myCourses-card-subject'>
-                        Sport
-                    </div>
-                </div>
-                <div className='myCourses-card'>
-                    <div className='myCourses-card-subject'>
-                        English
-                    </div>
-                </div>
+                {
+                    courseList.map((course) => (
+                        <a href='/Learner-course'>
+                            <div key={course.id} className='myCourses-card'>
+                                <div className='myCourses-card-subject'>
+                                    {course.title}
+                                </div>
+                            </div>
+                        </a>
+
+                    ))
+                }
             </div>
 
         </section>

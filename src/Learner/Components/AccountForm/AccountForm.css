@@ -1,0 +1,100 @@
+#AccountForm {
+    color: #000000;
+    cursor: context-menu;
+    height: 90vh;
+    width: 100%;
+}
+.AccountForm-title {
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.AccountForm-profile-image {
+    align-items: center;
+    background: #cccc;
+    border-radius: 60px;
+    display: flex;
+    height: 6rem;
+    justify-content: center;
+    margin: 2rem auto auto auto;
+    width: 6rem;
+}
+
+.AccountForm-inputs {
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.AccountForm-label_input {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.AccountForm-label {
+    font-size: 13px;
+    margin-top: 1rem;
+}
+.AccountForm-label_input input {
+    border-bottom: 2px solid #126180;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    outline: none;
+    width: 20rem
+}
+
+.AccountForm-profile-edit {
+    color: #000000;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.AccountForm-profile-edit:hover {
+    color: #126180;
+}
+
+.AccountForm-btns { 
+    display: flex;
+    justify-content: space-between;
+}
+.AccountForm-save-btn-act {
+    border: 0;
+    border-radius: 5px;
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.AccountForm-save-btn {
+    border: 0;
+    border-radius: 5px;
+    background: #cccccc;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.AccountForm-cancel-btn {
+    background: transparent;
+    border: 0;
+    color: #cccccc;
+    font-size: 16px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.AccountForm-cancel-btn-act {
+    background: transparent;
+    border: 0;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+    padding: 1rem;
+}

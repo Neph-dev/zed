@@ -78,7 +78,7 @@ function LearnerNavigation({ activeNav }) {
                     </div>
                 </a>
 
-                <a href='/Learner-messages'>
+                <a href='/Learner-account'>
                     <div className={
                         activeNav === 'account' ?
                             'LearnerNavigation-list-el-active'

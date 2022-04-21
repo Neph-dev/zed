@@ -1,0 +1,65 @@
+#Course {
+    color: #000000;
+    cursor: context-menu;
+    height: 90vh;
+    width: 100%;    
+}
+.Course-back_title {
+    align-items: center;
+    display: flex;
+}
+.Course-BiArrowBack {
+    color: #1b1b1b;
+    cursor: pointer;
+    border: 1px solid #1b1b1b;
+    position: relative;
+    border-radius: 50px;
+    margin-left: 5.5rem;
+    padding: .3rem;
+}
+.Course-title {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-left: 1rem;
+    text-transform: capitalize;
+}
+
+.Course-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem auto auto auto;
+    width: 80%;
+}
+
+.Course-card {
+    display: flex;
+    border-radius: 15px;
+    height: 11rem;
+    transition: transform .2s;
+    width: 11rem;
+}
+.Course-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.Course-card-title {
+    bottom: 0;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: auto;
+    text-transform: uppercase;
+    top: 0;
+}
+
+/* icons */
+.Course-icon {
+    color: #ffffff;
+    margin-left: 7.5rem;
+    margin-top: 7.5rem;
+    filter: brightness(.9);
+    position: absolute;
+}

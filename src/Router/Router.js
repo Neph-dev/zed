@@ -6,7 +6,9 @@
 import { BrowserRouter as Routers, Route, Switch } from 'react-router-dom';
 
 //import the learner pages.
+import LearnerAccount from '../Learner/Pages/Account';
 import LearnerCalendar from '../Learner/Pages/Calendar';
+import LearnerCourse from '../Learner/Pages/Course';
 import LearnerCourses from '../Learner/Pages/Courses';
 import LearnerHome from '../Learner/Pages/Home';
 import LearnerMarks from '../Learner/Pages/Marks';
@@ -21,7 +23,9 @@ export default function Router() {
     <Routers>
         <Switch>           
             <Route exact path='/' component={LearnerHome} />
+            <Route exact path='/Learner-account' component={LearnerAccount} />
             <Route exact path='/Learner-calendar' component={LearnerCalendar} />
+            <Route exact path='/Learner-course' component={LearnerCourse} />
             <Route exact path='/Learner-courses' component={LearnerCourses} />
             <Route exact path='/Learner-marks' component={LearnerMarks} />
             <Route exact path='/Learner-messages' component={LearnerMessages} />
