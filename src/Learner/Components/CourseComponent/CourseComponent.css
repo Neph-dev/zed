@@ -8,15 +8,6 @@
     align-items: center;
     display: flex;
 }
-.Course-BiArrowBack {
-    color: #1b1b1b;
-    cursor: pointer;
-    border: 1px solid #1b1b1b;
-    position: relative;
-    border-radius: 50px;
-    margin-left: 5.5rem;
-    padding: .3rem;
-}
 .Course-title {
     font-size: 22px;
     font-weight: normal;
@@ -62,4 +53,13 @@
     margin-top: 7.5rem;
     filter: brightness(.9);
     position: absolute;
+}
+.Course-BiArrowBack {
+    color: #1b1b1b;
+    cursor: pointer;
+    border: 1px solid #1b1b1b;
+    position: relative;
+    border-radius: 50px;
+    margin-left: 5.5rem;
+    padding: .3rem;
 }

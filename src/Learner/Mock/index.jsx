@@ -43,3 +43,26 @@ export const Principal = [
         newMsg: 1,
     },
 ]
+
+export const courseMarks = [
+    {
+        id: 0,
+        tests: [
+            {
+                id: 1,
+                title: 'test1',
+                mark: 3,
+            },
+            {
+                id: 2,
+                title: 'test2',
+                mark: 9,
+            },
+            {
+                id: 3,
+                title: 'Exams',
+                mark: 50,
+            },
+        ]
+    },
+]

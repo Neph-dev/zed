@@ -17,21 +17,23 @@ function ChooseDiscussion() {
             <div className='ChDiscussion-cards'>
                 {
                     Principal.map((principal) => (
-
-                        <div className='ChDiscussion-card-direction'>
+                        <a
+                            href="/Learner-course-discussion"
+                            className='ChDiscussion-card-direction'>
                             <div className='ChDiscussion-card-number'>
                                 {principal.newMsg}
                             </div>
                             <div className='ChDiscussion-card-title'>
                                 {principal.title}
                             </div>
-                        </div>
+                        </a>
                     ))
                 }
                 {
                     courseList.map((course) => (
-
-                        <div className='ChDiscussion-card'>
+                        <a
+                            href="/Learner-course-discussion"
+                            className='ChDiscussion-card'>
                             <div className='ChDiscussion-card-number'>
                                 {course.newMsg}
                             </div>
@@ -41,7 +43,7 @@ function ChooseDiscussion() {
                             <div className='ChDiscussion-card-people'>
                                 {course.people} people
                             </div>
-                        </div>
+                        </a>
                     ))
                 }
             </div>

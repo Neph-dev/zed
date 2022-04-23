@@ -17,19 +17,22 @@ function CourseComponent() {
             id: 0,
             title: 'Materials',
             background: '#966fd6',
-            icon: <GiFullFolder size={50} className="Course-icon" />
+            icon: <GiFullFolder size={50} className="Course-icon" />,
+            to: '/Learner-course-marks',
         },
         {
             id: 1,
             title: 'Discussion',
             background: '#1164b4',
-            icon: <TiMessages size={50} className="Course-icon" />
+            icon: <TiMessages size={50} className="Course-icon" />,
+            to: '/Learner-course-discussion',
         },
         {
             id: 2,
             title: 'Marks',
             background: '#6eaea1',
-            icon: <RiMarkPenFill size={50} className="Course-icon" />
+            icon: <RiMarkPenFill size={50} className="Course-icon" />,
+            to: '/Learner-course-marks',
         },
     ]
 
@@ -40,7 +43,7 @@ function CourseComponent() {
                 <a href='/Learner-courses'>
                     <BiArrowBack
                         title='back'
-                        size={35}
+                        size={25}
                         className='Course-BiArrowBack' />
                 </a>
 
@@ -52,15 +55,17 @@ function CourseComponent() {
             <div className='Course-content'>
                 {
                     widgetList.map((widget) => (
-                        <div
-                            key={widget.id}
-                            style={{ background: widget.background }}
-                            className='Course-card' >
-                            <div className='Course-card-title'>
-                                {widget.title}
+                        <a href={widget.to}>
+                            <div
+                                key={widget.id}
+                                style={{ background: widget.background }}
+                                className='Course-card' >
+                                <div className='Course-card-title'>
+                                    {widget.title}
+                                </div>
+                                {widget.icon}
                             </div>
-                            {widget.icon}
-                        </div>
+                        </a>
                     ))
                 }
             </div>

@@ -1,0 +1,55 @@
+#DiscussionHeader {
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    background: 0.5;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 13;
+}
+
+.DiscussionHeader-list-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.DiscussionHeader-icon_title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+.DiscussionHeader-group-title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: context-menu;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+/* Icons */
+.DiscussionHeader-BiArrowBack {
+    align-items: center;
+    display: flex;
+    color: #1b1b1b;
+    cursor: pointer;
+    border: 1px solid #1b1b1b;
+    border-radius: 50px;
+    justify-content: center;
+    margin-right: 1rem;
+    padding: .3rem;
+    position: relative;
+    margin-left: .5rem;
+}
+.BiMenu-DiscussionHeader {
+    align-items: center;
+    display: flex;
+    color: #1b1b1b;
+    cursor: pointer;
+    margin-right: 1rem;
+    padding: .3rem;
+}

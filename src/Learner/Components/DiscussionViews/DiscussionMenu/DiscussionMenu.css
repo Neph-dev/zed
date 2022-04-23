@@ -1,0 +1,26 @@
+.DiscussionMenu-dropdown {
+    background-color: #ffffff;
+    border: 1px solid #126180;
+    cursor: context-menu;
+    height: 100%;
+    margin-top: 2rem;
+    overflow-y: auto;
+    position: fixed;
+    right: 0rem;
+    width: 50vh;
+    animation: slide .5s forwards;
+    
+}
+@keyframes slide {
+    0% {
+      right: -4rem;
+    }
+    100% {
+      right: 0;
+    }
+}
+.DiscussionMenu-notification-close {
+    display: flex;
+    color: #000000;
+    margin: 10px;
+}

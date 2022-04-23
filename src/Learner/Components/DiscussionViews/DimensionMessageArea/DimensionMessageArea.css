@@ -1,0 +1,27 @@
+.textArea-container {
+    align-items: center;
+    background-color: #242124;
+    box-shadow: 0 0 10px rgb(78, 81, 128, .9);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    position: relative;
+    width: 100vh;
+  }
+  .class-discussion-text-area {
+    align-items: center;
+    border-radius: 15px;
+    font-size: 18px;
+    outline: none;
+    overflow: auto;
+    max-height: 5rem;
+    padding: 10px 10px 10px 10px;
+    resize: none;
+    width: 80%;
+  }
+
+.send-icon {
+    cursor: pointer;
+    color: #ffffff;
+}

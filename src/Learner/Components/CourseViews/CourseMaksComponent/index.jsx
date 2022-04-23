@@ -1,27 +1,40 @@
 import React from 'react';
 
-import { courseList } from '../../Mock';
+import { courseMarks } from '../../../Mock';
 
 // react-circular-progressbar
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-// Icons.
+// Icons
+import { BiArrowBack } from 'react-icons/bi';
 import { BiUpArrowAlt, BiDownArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import { GoPrimitiveDot } from 'react-icons/go';
 
-import './MarksComponent.css';
+import './CourseMaksComponent.css';
 
 
-function MarksComponent() {
+function CourseMaksComponent() {
 
     // Calculate the sum of all marks and divide it by the length of all added marks 
     //to find the average mark in percentage.
-    let averageMarksPercentage = courseList.reduce((acc, el) => acc + el.mark, 0) / courseList.length
-
+    let averageMarksPercentage = courseMarks.reduce((acc, el) => acc + el.tests[1].mark, 0) / courseMarks.length
 
     return (
-        <section id='Marks'>
+        <div id='Course'>
+
+            <div className='Course-back_title'>
+                <a href='/Learner-course'>
+                    <BiArrowBack
+                        title='back'
+                        size={25}
+                        className='Course-BiArrowBack' />
+                </a>
+
+                <div className='Course-title'>
+                    Mathmatics
+                </div>
+            </div>
 
             <div className='Marks-title'>
                 Marks
@@ -30,18 +43,20 @@ function MarksComponent() {
             <div className='Marks-subject_average'>
                 <div>
                     {
-                        courseList.map((mark) => (
-                            <div className='Marks-subject-container'>
-                                <div className='Marks-subject-title'>
-                                    {mark.title}
+                        courseMarks.map((mark) => (
+                            mark.tests.map((test) => (
+                                <div key={test.id} className='Marks-subject-container'>
+                                    <div className='Marks-subject-title'>
+                                        {test.title}
+                                    </div>
+                                    <div className='Marks-subject-mark'>
+                                        {test.mark}% <BiUpArrowAlt
+                                            title='Mark on up trend since the last update.'
+                                            size={20}
+                                            className='Marks-BiUpArrowAlt' />
+                                    </div>
                                 </div>
-                                <div className='Marks-subject-mark'>
-                                    {mark.mark}% <BiUpArrowAlt
-                                        title='Mark on up trend since the last update.'
-                                        size={20}
-                                        className='Marks-BiUpArrowAlt' />
-                                </div>
-                            </div>
+                            ))
                         ))
                     }
                 </div>
@@ -72,8 +87,8 @@ function MarksComponent() {
                 </div>
             </div>
 
-        </section>
+        </div>
     );
 }
 
-export default MarksComponent;
+export default CourseMaksComponent;
