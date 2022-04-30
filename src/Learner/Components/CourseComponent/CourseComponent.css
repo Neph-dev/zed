@@ -9,6 +9,7 @@
     display: flex;
 }
 .Course-title {
+    color: #000000;
     font-size: 22px;
     font-weight: normal;
     letter-spacing: 2px;

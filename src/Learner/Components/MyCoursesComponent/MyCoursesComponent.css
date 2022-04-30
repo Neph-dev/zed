@@ -13,38 +13,4 @@
     text-transform: capitalize;
     text-align: center;
 }
-.myCourses-cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center;
-    margin-top: 2rem;
-    width: 80%;
-}
-.myCourses-card {
-    background-color: #4568DC;
-    display: flex;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: .5rem;
-    height: 5rem;
-    transition: transform .2s;
-    width: 13rem;
-}
-.myCourses-card:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.myCourses-card-subject {
-    align-items: center;
-    bottom: 0;
-    color: #ffffff;
-    display: flex;
-    font-size: 16px;
-    justify-content: center;
-    letter-spacing: 2px;
-    margin: auto;
-    text-transform: uppercase;
-    top: 0;
-}
 

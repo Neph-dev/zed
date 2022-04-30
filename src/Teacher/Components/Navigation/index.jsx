@@ -1,24 +1,20 @@
 import React from 'react';
 
-// Import styling components.
-import './LearnerNavigation.css';
-
 // Import icons.
 import { HiHome } from 'react-icons/hi';
+import { FaChalkboardTeacher } from 'react-icons/fa';
 import { BsCalendar2Range } from 'react-icons/bs';
-import { GiCheckMark } from 'react-icons/gi';
 import { SiGooglemessages } from 'react-icons/si';
-import { MdAccountCircle, MdOutlineSubject } from 'react-icons/md';
+import { MdAccountCircle } from 'react-icons/md';
 
 
-
-function LearnerNavigation({ activeNav }) {
+function TeacherNavigation({ activeNav }) {
     return (
         <div id='LearnerNavigation'>
 
             <div className='LearnerNavigation-list-content'>
 
-                <a href='/'>
+                <a href='/Teacher-dashboard'>
                     <div className={
                         activeNav === 'home' ?
                             'LearnerNavigation-list-el-active'
@@ -30,15 +26,15 @@ function LearnerNavigation({ activeNav }) {
                     </div>
                 </a>
 
-                <a href='/Learner-subjects'>
+                <a href='/Teacher-classes'>
                     <div className={
-                        activeNav === 'subjects' ?
+                        activeNav === 'classes' ?
                             'LearnerNavigation-list-el-active'
                             : 'LearnerNavigation-list-el'}>
-                        <MdOutlineSubject
+                        <FaChalkboardTeacher
                             size={25}
                             className='LearnerNavigation-list-icon' />
-                        <div className='LearnerNavigation-list-label'>Subjects</div>
+                        <div className='LearnerNavigation-list-label'>Classes</div>
                     </div>
                 </a>
 
@@ -51,18 +47,6 @@ function LearnerNavigation({ activeNav }) {
                             size={25}
                             className='LearnerNavigation-list-icon' />
                         <div className='LearnerNavigation-list-label'>Calendar</div>
-                    </div>
-                </a>
-
-                <a href='/Learner-marks'>
-                    <div className={
-                        activeNav === 'marks' ?
-                            'LearnerNavigation-list-el-active'
-                            : 'LearnerNavigation-list-el'}>
-                        <GiCheckMark
-                            size={25}
-                            className='LearnerNavigation-list-icon' />
-                        <div className='LearnerNavigation-list-label'>Marks</div>
                     </div>
                 </a>
 
@@ -96,4 +80,4 @@ function LearnerNavigation({ activeNav }) {
     );
 }
 
-export default LearnerNavigation;
+export default TeacherNavigation;

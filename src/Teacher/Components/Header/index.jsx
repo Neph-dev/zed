@@ -3,18 +3,15 @@ import { Link } from 'react-router-dom'
 
 import { useDetectClickOutside } from 'react-detect-click-outside';
 
-//import styling components
-import './LearnerHeader.css';
-
 //import icons
 import { HiVideoCamera } from 'react-icons/hi';
 
-import LearnerNavigation from '../Navigation';
 import Notifications from '../../../Components/Notifications';
 import HeaderMenu from '../../../Components/HeaderMenu';
+import TeacherNavigation from '../Navigation';
 
 
-function LearnerHeader({ activeNav }) {
+function TeacherHeader({ activeNav }) {
 
     const [showNotificationDropdown, setShowNotificationDropdown] = useState(false)
     const [showMoreDropdown, setShowMoreDropdown] = useState(false)
@@ -32,11 +29,10 @@ function LearnerHeader({ activeNav }) {
     return (
         <div>
             <div id='LearnerHeader'>
-
                 <div className='LearnerHeader-list-container'>
                     <div className='LearnerHeader-logo_notifications' >
                         <div className='LearnerHeader-logo'>
-                            <Link to='/'>
+                            <Link to='/Teacher-dashboard'>
                                 Zed
                             </Link>
                         </div>
@@ -56,12 +52,11 @@ function LearnerHeader({ activeNav }) {
                             showMoreDropdown={showMoreDropdown} />
                     </div>
                 </div>
-
             </div>
 
-            <LearnerNavigation activeNav={activeNav} />
+            <TeacherNavigation activeNav={activeNav} />
         </div>
     );
 }
 
-export default LearnerHeader;
+export default TeacherHeader;

@@ -10,7 +10,7 @@ import CourseMaksComponent from '../../Components/CourseViews/CourseMaksComponen
 
 function CourseMarks() {
 
-    const activeNav = 'courses';
+    const activeNav = 'subjects';
 
     //automatically scroll to top
     useEffect(() => {

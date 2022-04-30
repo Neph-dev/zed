@@ -40,7 +40,7 @@ function CourseComponent() {
         <div id='Course'>
 
             <div className='Course-back_title'>
-                <a href='/Learner-courses'>
+                <a href='/Learner-subjects'>
                     <BiArrowBack
                         title='back'
                         size={25}

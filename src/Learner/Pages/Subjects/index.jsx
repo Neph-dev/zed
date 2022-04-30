@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 
 import LearnerHeader from '../../Components/Header';
-import CourseComponent from '../../Components/CourseComponent';
+import MyCoursesComponent from '../../Components/MyCoursesComponent';
 
 
-function LearnerCourse() {
+function LearnerSubjects() {
 
     const activeNav = 'subjects';
 
@@ -20,12 +20,11 @@ function LearnerCourse() {
 
             <div className='PagesContent'>
 
-                <CourseComponent />
+                <MyCoursesComponent />
 
             </div>
-
         </div>
     );
 }
 
-export default LearnerCourse;
+export default LearnerSubjects;

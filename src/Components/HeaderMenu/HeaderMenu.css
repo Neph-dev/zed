@@ -1,0 +1,35 @@
+/* more dropdown*/
+.more-dropdown {
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    height: auto;
+    margin-right: 1rem;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    width: 30vh;
+}
+.more-drop-el {
+    align-items: center;
+    display: flex;
+    background: #ffffff;
+    border-bottom: 2px solid #126180; 
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 1rem;
+    width: 30vh;
+}
+.more-drop-el:hover {
+    background: #126180;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+/* Icons */
+.MdMoreVert {
+    color: #126180; /*#5072a7;*/
+    cursor: pointer;
+    margin-right: 2rem;
+}

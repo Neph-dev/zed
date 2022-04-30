@@ -9,7 +9,7 @@ import '../../Components/LearnerPagesCss/LearnerPages.css';
 import LearnerHeader from '../../Components/Header';
 import MyCoursesComponent from '../../Components/MyCoursesComponent';
 import DailyView from '../../Components/CalendarViews/DailyView';
-import Greeting from '../../Components/Greeting';
+import Greeting from '../../../Components/Greeting';
 import Day from '../../Components/CalendarViews/Day';
 
 
@@ -23,7 +23,7 @@ function LearnerHome() {
     }, []);
 
     return (
-        <div id='LearnerPages'>
+        <div id='Pages'>
 
             <Helmet>
                 <title>Welcome to Zed</title>
@@ -37,7 +37,7 @@ function LearnerHome() {
 
             <LearnerHeader activeNav={activeNav} />
 
-            <div className='learnerPagesContent'>
+            <div className='PagesContent'>
 
                 <Greeting />
 

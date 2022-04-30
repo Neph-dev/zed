@@ -1,26 +1,24 @@
 import React from 'react';
 
-import { courseList } from '../../Mock';
+import { teacherClasses } from '../../Mock';
 
-import './MyCoursesComponent.css';
+import './ClassesComponent.css';
 
 
-
-function MyCoursesComponent() {
-
+function ClassesComponent() {
     return (
         <section id='myCourses'>
 
             <div className='myCourses-title'>
-                Subjects
+                My Classes
             </div>
             <div className='cards-list'>
                 {
-                    courseList.map((course) => (
-                        <a href='/Learner-course'>
-                            <div key={course.id} className='blue-card'>
+                    teacherClasses.map((teacherClasse) => (
+                        <a href='/Teacher-subjects'>
+                            <div key={teacherClasse.id} className='blue-card '>
                                 <div className='blue-card-centered-txt'>
-                                    {course.title}
+                                    {teacherClasse.value}
                                 </div>
                             </div>
                         </a>
@@ -32,4 +30,4 @@ function MyCoursesComponent() {
     );
 }
 
-export default MyCoursesComponent;
+export default ClassesComponent;
