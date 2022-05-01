@@ -20,6 +20,7 @@ import LearnerMessages from '../Learner/Pages/Messages';
 import TeacherClasses from '../Teacher/Pages/Classes';
 import TeacherHome from '../Teacher/Pages/Home';
 import TeacherSubjects from '../Teacher/Pages/Subjects';
+import TeacherSubjectDashboard from '../Teacher/Pages/SubjectDashboard';
 
 // Import authentication components.
 
@@ -42,6 +43,7 @@ export default function Router() {
             <Route exact path='/Teacher-dashboard' component={TeacherHome} />
             <Route exact path='/Teacher-classes' component={TeacherClasses} />
             <Route exact path='/Teacher-subjects' component={TeacherSubjects} />
+            <Route exact path='/Teacher-subject-dashboard' component={TeacherSubjectDashboard} />
 
         </Switch>
     </Routers>

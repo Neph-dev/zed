@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { courseList, Principal } from '../../../Mock'
 
@@ -10,20 +10,20 @@ function ChooseDiscussion() {
     return (
         <div id='ChDiscussion'>
 
-            <div className='ChDiscussion-title'>
+            <div className='PageTitle'>
                 Choose Discussion Group
             </div>
 
-            <div className='ChDiscussion-cards'>
+            <div className='cards-list'>
                 {
                     Principal.map((principal) => (
                         <a
                             href="/Learner-course-discussion"
-                            className='ChDiscussion-card-direction'>
-                            <div className='ChDiscussion-card-number'>
+                            className='radius-main-card'>
+                            <div className='radius-card-top-right'>
                                 {principal.newMsg}
                             </div>
-                            <div className='ChDiscussion-card-title'>
+                            <div className='radius-card-title'>
                                 {principal.title}
                             </div>
                         </a>
@@ -33,22 +33,22 @@ function ChooseDiscussion() {
                     courseList.map((course) => (
                         <a
                             href="/Learner-course-discussion"
-                            className='ChDiscussion-card'>
-                            <div className='ChDiscussion-card-number'>
+                            className='radius-card'>
+                            <div className='radius-card-top-right'>
                                 {course.newMsg}
                             </div>
-                            <div className='ChDiscussion-card-title'>
+                            <div className='radius-card-title'>
                                 {course.title}
                             </div>
-                            <div className='ChDiscussion-card-people'>
-                                {course.people} people
+                            <div className='radius-card-sm-text'>
+                                {course.people} Students
                             </div>
                         </a>
                     ))
                 }
             </div>
 
-        </div>
+        </div >
     );
 }
 

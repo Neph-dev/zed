@@ -12,3 +12,16 @@ export const teacherClasses = [
         value: 'Grade 11',
     },
 ]
+
+export const TeacherSubjects = [
+    {
+        id: 1,
+        title: 'Mathmatics',
+        numberOfStudents: 50,
+    },
+    {
+        id: 2,
+        title: 'Chemestry',
+        numberOfStudents: 50,
+    }
+]

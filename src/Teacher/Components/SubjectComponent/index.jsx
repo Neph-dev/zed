@@ -1,34 +1,39 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-import { Link } from 'react-router-dom';
-
+//Icons
 import { BiArrowBack } from 'react-icons/bi';
 import { TiMessages } from 'react-icons/ti';
 import { RiMarkPenFill } from 'react-icons/ri';
 import { GiFullFolder } from 'react-icons/gi';
+import { SiGoogleclassroom } from 'react-icons/si';
 
-import './CourseComponent.css';
 
-
-function CourseComponent() {
+function SubjectComponent() {
 
     const widgetList = [
         {
             id: 0,
+            title: 'Students',
+            background: '#3b3c36',
+            icon: <SiGoogleclassroom size={50} className="radius-card-icon" />,
+            to: '/Learner-course-discussion',
+        },
+        {
+            id: 1,
+            title: 'Discussion',
+            background: '#5072a7',
+            icon: <TiMessages size={50} className="radius-card-icon" />,
+            to: '/Learner-course-discussion',
+        },
+        {
+            id: 2,
             title: 'Materials',
             background: '#966fd6',
             icon: <GiFullFolder size={50} className="radius-card-icon" />,
             to: '/Learner-course-marks',
         },
         {
-            id: 1,
-            title: 'Discussion',
-            background: '#1164b4',
-            icon: <TiMessages size={50} className="radius-card-icon" />,
-            to: '/Learner-course-discussion',
-        },
-        {
-            id: 2,
+            id: 3,
             title: 'Marks',
             background: '#6eaea1',
             icon: <RiMarkPenFill size={50} className="radius-card-icon" />,
@@ -40,7 +45,7 @@ function CourseComponent() {
         <div id='Course'>
 
             <div className='Course-back_title'>
-                <a href='/Learner-subjects'>
+                <a href='/Teacher-subjects'>
                     <BiArrowBack
                         title='back'
                         size={25}
@@ -59,9 +64,11 @@ function CourseComponent() {
                             key={widget.id}
                             style={{ background: widget.background }}
                             className='radius-card' >
+
                             <div className='radius-card-title'>
                                 {widget.title}
                             </div>
+
                             {widget.icon}
                         </a>
                     ))
@@ -72,4 +79,4 @@ function CourseComponent() {
     );
 }
 
-export default CourseComponent;
+export default SubjectComponent;

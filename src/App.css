@@ -13,6 +13,15 @@
     margin-bottom: auto;
     position: absolute;
 }
+.PageTitle {
+    color: #000000;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
 
 .cards-list {
     display: flex;
@@ -47,4 +56,64 @@
     margin: auto;
     text-transform: uppercase;
     top: 0;
+}
+
+.radius-main-card {
+    background-color: #e30022;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 12rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: transform .2s;
+    width: 11rem;
+}
+.radius-main-card:hover {
+    transform: scale(1.05);
+}
+.radius-card {
+    background-color: #126180;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 12rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: transform .2s;
+    width: 11rem;
+}
+.radius-card:hover {
+    transform: scale(1.05);
+}
+.radius-card-top-right {
+    font-size: 13px;
+    background-color: #537989;
+    border-radius: 50px;
+    color: #ffffff;
+    float: right;
+    margin: .5rem;
+    padding: .3rem;
+}
+.radius-card-title {
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.radius-card-sm-text {
+    color: #cccccc;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-right: 1rem;
+    float: right;
+}
+.radius-card-icon {
+    color: #ffffff;
+    margin-left: 7.5rem;
+    margin-top: 2rem;
+    filter: brightness(.9);
+    position: absolute;
 }
