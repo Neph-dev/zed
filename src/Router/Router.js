@@ -21,6 +21,10 @@ import TeacherClasses from '../Teacher/Pages/Classes';
 import TeacherHome from '../Teacher/Pages/Home';
 import TeacherSubjects from '../Teacher/Pages/Subjects';
 import TeacherSubjectDashboard from '../Teacher/Pages/SubjectDashboard';
+import TeacherStudents from '../Teacher/Pages/Students';
+import TeacherStudentAssign from '../Teacher/Pages/StudentAssignments';
+import TeacherStudentMarks from '../Teacher/Pages/StudentMarks';
+import TeacherStudentProfile from '../Teacher/Pages/StudentProfile';
 
 // Import authentication components.
 
@@ -42,6 +46,10 @@ export default function Router() {
 
             <Route exact path='/Teacher-dashboard' component={TeacherHome} />
             <Route exact path='/Teacher-classes' component={TeacherClasses} />
+            <Route exact path='/Teacher-students' component={TeacherStudents} />
+            <Route exact path='/Teacher-student-assignments' component={TeacherStudentAssign} />
+            <Route exact path='/Teacher-student-marks' component={TeacherStudentMarks} />
+            <Route exact path='/Teacher-student-profile' component={TeacherStudentProfile} />
             <Route exact path='/Teacher-subjects' component={TeacherSubjects} />
             <Route exact path='/Teacher-subject-dashboard' component={TeacherSubjectDashboard} />
 

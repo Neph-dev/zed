@@ -1,0 +1,20 @@
+.SM-components-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+.SM-components-header-name {
+    color: #000000;
+    cursor: context-menu;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    
+}
+.AiOutlinePlusCircle {
+    color: #126180;
+    cursor: pointer;
+    margin-right: 2rem;
+}

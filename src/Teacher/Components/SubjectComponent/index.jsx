@@ -16,7 +16,7 @@ function SubjectComponent() {
             title: 'Students',
             background: '#3b3c36',
             icon: <SiGoogleclassroom size={50} className="radius-card-icon" />,
-            to: '/Learner-course-discussion',
+            to: '/Teacher-students',
         },
         {
             id: 1,
