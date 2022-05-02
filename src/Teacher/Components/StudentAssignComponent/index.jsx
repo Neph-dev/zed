@@ -5,6 +5,7 @@ import { BiArrowBack } from 'react-icons/bi';
 import './StudentAssignComponent.css';
 
 import StudentsProfileTabs from '../StudentsProfileTabs';
+import AssignmentsList from '../../../Components/AssignmentsList';
 
 
 function StudentAssignComponent() {
@@ -24,6 +25,8 @@ function StudentAssignComponent() {
             </div>
 
             <StudentsProfileTabs activeTab={activeTab} />
+
+            <AssignmentsList />
 
         </div>
     );

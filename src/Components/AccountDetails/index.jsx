@@ -23,6 +23,8 @@ function AccountDetails() {
                     </div>
                     <a
                         href="mailto:snephthali@gmail.com"
+                        target='_blank'
+                        rel="noreferrer"
                         className='AccountDetails-header-email'>
                         sorayazed@gmail.com
                     </a>
@@ -48,12 +50,18 @@ function AccountDetails() {
                 <li><b>Guardian's name:</b> Sarah Zed</li>
                 <li><b>Relationship:</b> Mother</li>
                 <li><b>Phone number:</b>
-                    <a href="tel:+27677919267">
+                    <a
+                        href="tel:+27677919267"
+                        target='_blank'
+                        rel="noreferrer" >
                         +27 67 791 9267
                     </a>
                 </li>
                 <li><b>Email address:</b>
-                    <a href="mailto:snephthali@gmail.com">
+                    <a
+                        href="mailto:snephthali@gmail.com"
+                        target='_blank'
+                        rel="noreferrer" >
                         sarahzed@gmail.com
                     </a>
                 </li>

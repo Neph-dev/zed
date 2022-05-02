@@ -1,0 +1,71 @@
+#AssignmentsList {
+    margin-left: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.AssignmentsList {
+
+}
+
+.AssignmentsList-card {
+    width: 100%
+}
+.AssignmentsList-card-container {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    cursor: context-menu;
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+    height: 18rem;
+    width: 50%;
+}
+
+.AssignmentsList-firstDoc {
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: flex;
+    height: 45%;
+    justify-content: flex-start;
+    margin: .5rem auto auto auto;
+    width: 90%;
+}
+
+.AssignmentsList-firstDoc-title {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    text-align: center;
+    width: 33rem;
+}
+.AssignmentsList-firstDoc-Details {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 1rem;
+}
+.AssignmentsList-firstDoc-Details-el {
+    margin-left: 1rem;
+}
+
+.AssignmentsList-firstDoc-btns {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.AssignmentsList-firstDoc-btns button{
+    border: 0;
+    background: transparent;
+    bottom: 0;
+    color: #000000;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 3.5rem;
+}
+.AssignmentsList-firstDoc-btns button:hover{
+    text-decoration: underline;
+}
