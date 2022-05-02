@@ -1,0 +1,61 @@
+#AccountDetails {
+    color: #000000;
+    cursor: context-menu;
+    margin-left: 7.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.AccountDetails-header-container {
+    align-items: center;
+    display: flex;
+}
+.AccountDetails-header-img {
+    height: 8;
+    width: 7.8rem;
+}
+.AccountDetails-header-img img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+}
+.AccountDetails-header-name {
+    color: #000000;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-left: 2rem;    
+    text-transform: uppercase;
+}
+.AccountDetails-header-email {
+    color: #888080;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-left: 2rem;    
+    text-transform: lowercase;
+}
+
+.AccountDetails-title {
+    color: #000000;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-left: 2rem;    
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+
+.AccountDetails-elments {
+    margin-top: 2rem;
+}
+.AccountDetails-elments li {
+    list-style: none;
+    color: #000000;
+    font-size: 18px;
+    margin-top: .5rem;
+}
+.AccountDetails-elments li a {
+    margin-left: .5rem;
+}

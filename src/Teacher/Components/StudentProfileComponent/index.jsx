@@ -5,6 +5,7 @@ import { BiArrowBack } from 'react-icons/bi';
 import './StudentProfileComponent.css';
 
 import StudentsProfileTabs from '../StudentsProfileTabs';
+import AccountDetails from '../../../Components/AccountDetails';
 
 
 function StudentProfileComponent() {
@@ -24,6 +25,8 @@ function StudentProfileComponent() {
             </div>
 
             <StudentsProfileTabs activeTab={activeTab} />
+
+            <AccountDetails />
 
         </div>
     );

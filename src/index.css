@@ -16,6 +16,11 @@ a {
   text-decoration: none;
 }
 
+li a {
+  color: #000000;
+  text-decoration: none;
+}
+
 ::-webkit-scrollbar {
   background: #ffffff;
   width: 3px;

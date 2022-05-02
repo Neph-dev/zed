@@ -1,9 +1,5 @@
 import React from 'react';
 
-// react-circular-progressbar
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
-
 // Icons.
 import { BiUpArrowAlt, BiDownArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import { GoPrimitiveDot } from 'react-icons/go';
