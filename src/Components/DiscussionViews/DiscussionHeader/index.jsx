@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { useHistory } from "react-router-dom";
+
 import { BiArrowBack, BiMenu } from 'react-icons/bi';
 import DiscussionMenu from '../DiscussionMenu';
 
@@ -10,16 +12,19 @@ function DiscussionHeader() {
 
     const [showMenu, setShowMenu] = useState(false);
 
+    const history = useHistory();
+
     return (
         <div id='DiscussionHeader'>
             <div className='DiscussionHeader-list-container'>
                 <div className='DiscussionHeader-icon_title' >
-                    <a href='/Learner-course'>
+                    <div >
                         <BiArrowBack
+                            onClick={() => history.goBack()}
                             title='back'
                             size={20}
                             className='DiscussionHeader-BiArrowBack' />
-                    </a>
+                    </div>
                     <div className='DiscussionHeader-group-title'>
                         Mathmatics
                     </div>

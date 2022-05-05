@@ -99,10 +99,10 @@ function TeacherMaterialList() {
 
                                 {
                                     material.type === 'file' ?
-                                        <AiTwotoneFilePdf size={50} className='radius-card-icon' />
+                                        <AiTwotoneFilePdf size={45} className='radius-card-icon' />
                                         : material.type === 'video' ?
-                                            <FaFileVideo size={50} className='radius-card-icon' />
-                                            : <AiFillFileUnknown size={50} className='radius-card-icon' />
+                                            <FaFileVideo size={45} className='radius-card-icon' />
+                                            : <AiFillFileUnknown size={45} className='radius-card-icon' />
 
                                 }
 

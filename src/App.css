@@ -121,19 +121,65 @@
     
     width: auto;
 }
+.radius-card-name-surname {
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 2rem auto auto auto;
+    text-transform: capitalize;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    width: 8rem;
+}
 .radius-card-name {
     color: #ffffff;
     font-size: 16px;
     letter-spacing: 2px;
-    margin-top: 2rem;
-    text-align: center;
+    margin: 2rem auto auto auto;
     text-transform: uppercase;
-
+    
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 
-    width: 11rem;
+    width: 8rem;
+}
+.radius-card-mark {
+    
+    background: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #fff;
+    color: #ffffff;
+    display: flex;
+    outline: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+
+    margin: .2rem auto auto auto;
+    text-align: center;
+    text-transform: uppercase;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    width: 8rem;
+}
+.radius-card-mark-btn {
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    height: 1.5rem;
+    justify-content: center;
+    margin: 1.5rem auto auto auto;
+    width: 80%;
 }
 .radius-card-sm-text {
     color: #cccccc;

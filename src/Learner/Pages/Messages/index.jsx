@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import '../../Components/LearnerPagesCss/LearnerPages.css';
 
 import LearnerHeader from '../../Components/Header';
-import ChooseDiscussion from '../../Components/DiscussionViews/ChooseDiscussion';
+import ChooseDiscussion from '../../Components/ChooseDiscussion';
 
 function LearnerMessages() {
 

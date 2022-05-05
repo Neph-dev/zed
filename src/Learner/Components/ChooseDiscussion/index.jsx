@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { courseList, Principal } from '../../../Mock'
+import { courseList, Principal } from '../../Mock'
 
 import './ChooseDiscussion.css';
 

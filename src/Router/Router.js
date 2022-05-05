@@ -17,7 +17,10 @@ import LearnerMarks from '../Learner/Pages/Marks';
 import LearnerMessages from '../Learner/Pages/Messages';
 
 //import the teacher pages.
+import TeacherAssignments from '../Teacher/Pages/Assignments';
+import TeacherAssignmentsFolder from '../Teacher/Pages/AssignmentsFolder';
 import TeacherClasses from '../Teacher/Pages/Classes';
+import TeacherDiscussion from '../Teacher/Pages/Discussion';
 import TeacherHome from '../Teacher/Pages/Home';
 import TeacherMaterials from '../Teacher/Pages/Materials';
 import TeacherSubjects from '../Teacher/Pages/Subjects';
@@ -45,6 +48,8 @@ export default function Router() {
             <Route exact path='/Learner-marks' component={LearnerMarks} />
             <Route exact path='/Learner-messages' component={LearnerMessages} />
 
+            <Route exact path='/Teacher-assignments' component={TeacherAssignments} />
+            <Route exact path='/Teacher-assignment-folder' component={TeacherAssignmentsFolder} />
             <Route exact path='/Teacher-dashboard' component={TeacherHome} />
             <Route exact path='/Teacher-classes' component={TeacherClasses} />
             <Route exact path='/Teacher-materials' component={TeacherMaterials} />
@@ -54,6 +59,7 @@ export default function Router() {
             <Route exact path='/Teacher-student-profile' component={TeacherStudentProfile} />
             <Route exact path='/Teacher-subjects' component={TeacherSubjects} />
             <Route exact path='/Teacher-subject-dashboard' component={TeacherSubjectDashboard} />
+            <Route exact path='/Teacher-discussion' component={TeacherDiscussion} />
 
         </Switch>
     </Routers>

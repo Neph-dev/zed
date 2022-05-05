@@ -1,0 +1,34 @@
+.AF-folderIcon_Name {
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    justify-content: center;
+    width: 8rem;
+}
+.AF-folderIcon_Name:hover {
+    background: rgb(248, 244, 244);
+}
+.AF-GoFileDirectory {
+    display: flex;
+    margin: auto;
+    color: #126180;
+}
+.AF-folderName {
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+.AF-folderName:hover {
+    text-decoration: underline;
+}
+
+.AF-AiOutlinePlusCircle{
+    cursor: pointer;
+    float: right;
+    margin-right: 2rem;
+}
