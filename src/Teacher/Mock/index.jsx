@@ -70,3 +70,36 @@ export const Students = [
         fullName: 'Justin Fish'
     },
 ]
+
+export const Materials = [
+    {
+        id: 1,
+        lastUpdate: '4 May 2022',
+        type: 'file',
+        title: 'Introduction  to quantum physics'
+    },
+    {
+        id: 2,
+        lastUpdate: '5 May 2022',
+        type: 'file',
+        title: 'Pytagoras'
+    },
+    {
+        id: 3,
+        lastUpdate: '5 May 2022',
+        type: 'video',
+        title: 'Pytagoras'
+    },
+    {
+        id: 4,
+        lastUpdate: '5 May 2022',
+        type: 'video',
+        title: 'Pytagoras'
+    },
+    {
+        id: 5,
+        lastUpdate: '5 May 2022',
+        type: 'unknown',
+        title: 'Pytagoras'
+    },
+]

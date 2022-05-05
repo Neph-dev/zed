@@ -30,7 +30,7 @@ function SubjectComponent() {
             title: 'Materials',
             background: '#966fd6',
             icon: <GiFullFolder size={50} className="radius-card-icon" />,
-            to: '/Learner-course-marks',
+            to: '/Teacher-materials',
         },
         {
             id: 3,

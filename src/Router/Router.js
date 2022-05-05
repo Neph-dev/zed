@@ -19,6 +19,7 @@ import LearnerMessages from '../Learner/Pages/Messages';
 //import the teacher pages.
 import TeacherClasses from '../Teacher/Pages/Classes';
 import TeacherHome from '../Teacher/Pages/Home';
+import TeacherMaterials from '../Teacher/Pages/Materials';
 import TeacherSubjects from '../Teacher/Pages/Subjects';
 import TeacherSubjectDashboard from '../Teacher/Pages/SubjectDashboard';
 import TeacherStudents from '../Teacher/Pages/Students';
@@ -46,6 +47,7 @@ export default function Router() {
 
             <Route exact path='/Teacher-dashboard' component={TeacherHome} />
             <Route exact path='/Teacher-classes' component={TeacherClasses} />
+            <Route exact path='/Teacher-materials' component={TeacherMaterials} />
             <Route exact path='/Teacher-students' component={TeacherStudents} />
             <Route exact path='/Teacher-student-assignments' component={TeacherStudentAssign} />
             <Route exact path='/Teacher-student-marks' component={TeacherStudentMarks} />

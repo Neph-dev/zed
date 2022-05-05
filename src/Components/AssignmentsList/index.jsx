@@ -12,16 +12,14 @@ function AssignmentsList() {
             <div className='AssignmentsList-cards'>
 
                 <div className='AssignmentsList-card-container'>
-
                     <div>
-
                         <div className='AssignmentsList-firstDoc'>
                             <div>
                                 <div className='AssignmentsList-firstDoc-title'>
                                     Assignment Title
                                 </div>
                                 <div className='AssignmentsList-firstDoc-Details'>
-                                    <BsFillFileEarmarkFill color='#126180' size={40} />
+                                    <BsFillFileEarmarkFill color='#ffffff' size={40} />
                                     <div className='AssignmentsList-firstDoc-Details-el'>
                                         <div>Document Name</div>
                                         <div>Uploaded: </div>
@@ -30,7 +28,7 @@ function AssignmentsList() {
 
                                     <div className='AssignmentsList-firstDoc-btns'>
                                         <button>Request</button>
-                                        <button style={{ color: 'red' }}>Delete</button>
+                                        {/* <button style={{ color: 'red' }}>Delete</button> */}
                                     </div>
                                 </div>
                             </div>
@@ -42,11 +40,10 @@ function AssignmentsList() {
                                     Last uploaded file from Zed
                                 </div>
                                 <div className='AssignmentsList-firstDoc-Details'>
-                                    <BsFillFileEarmarkFill color='#126180' size={40} />
+                                    <BsFillFileEarmarkFill color='#ffffff' size={40} />
                                     <div className='AssignmentsList-firstDoc-Details-el'>
                                         <div>Document Name</div>
                                         <div>Uploaded: </div>
-                                        <div>Due date:</div>
                                         <div>Mark:</div>
                                     </div>
                                     <div className='AssignmentsList-firstDoc-btns'>
@@ -55,10 +52,9 @@ function AssignmentsList() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
+
             </div>
 
         </div>
