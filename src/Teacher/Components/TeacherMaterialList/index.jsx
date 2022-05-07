@@ -69,7 +69,7 @@ function TeacherMaterialList() {
             <div className='AiOutlinePlusCircle-container'>
                 <AiOutlinePlusCircle
                     size={30}
-                    title='Add a new mark'
+                    title='Add a new grade.'
                     className='AiOutlinePlusCircle' />
             </div>
 

@@ -5,6 +5,14 @@
 
 import { BrowserRouter as Routers, Route, Switch } from 'react-router-dom';
 
+//import the admin pages.
+import AdminAccount from '../Super_Admin/Pages/Account';
+import AdminHome from '../Super_Admin/Pages/Home';
+import AdminGrade from '../Super_Admin/Pages/Grade';
+import AdminSchool from '../Super_Admin/Pages/School';
+import AdminSubject from '../Super_Admin/Pages/Subject';
+
+
 //import the learner pages.
 import LearnerAccount from '../Learner/Pages/Account';
 import LearnerCalendar from '../Learner/Pages/Calendar';
@@ -17,6 +25,7 @@ import LearnerMarks from '../Learner/Pages/Marks';
 import LearnerMessages from '../Learner/Pages/Messages';
 
 //import the teacher pages.
+import TeacherAccount from '../Teacher/Pages/Account';
 import TeacherAssignments from '../Teacher/Pages/Assignments';
 import TeacherAssignmentsFolder from '../Teacher/Pages/AssignmentsFolder';
 import TeacherClasses from '../Teacher/Pages/Classes';
@@ -38,6 +47,13 @@ export default function Router() {
   return (
     <Routers>
         <Switch>           
+            
+            <Route exact path='/Admin-dashboard' component={AdminHome} />
+            <Route exact path='/Admin-account' component={AdminAccount} />
+            <Route exact path='/Admin-grade' component={AdminGrade} />
+            <Route exact path='/Admin-school' component={AdminSchool} />
+            <Route exact path='/Admin-subject' component={AdminSubject} />
+
             <Route exact path='/' component={LearnerHome} />
             <Route exact path='/Learner-account' component={LearnerAccount} />
             <Route exact path='/Learner-calendar' component={LearnerCalendar} />
@@ -60,6 +76,7 @@ export default function Router() {
             <Route exact path='/Teacher-subjects' component={TeacherSubjects} />
             <Route exact path='/Teacher-subject-dashboard' component={TeacherSubjectDashboard} />
             <Route exact path='/Teacher-discussion' component={TeacherDiscussion} />
+            <Route exact path='/Teacher-account' component={TeacherAccount} />
 
         </Switch>
     </Routers>

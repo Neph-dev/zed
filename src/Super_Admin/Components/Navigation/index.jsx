@@ -4,8 +4,9 @@ import React from 'react';
 import { HiHome } from 'react-icons/hi';
 import { FaChalkboardTeacher } from 'react-icons/fa';
 import { BsCalendar2Range } from 'react-icons/bs';
-import { SiGooglemessages } from 'react-icons/si';
-import { MdAccountCircle } from 'react-icons/md';
+import { SiGooglemessages, SiGoogleclassroom } from 'react-icons/si';
+import { GiTeacher } from 'react-icons/gi';
+import { MdAccountCircle, MdSchool } from 'react-icons/md';
 
 
 function TeacherNavigation({ activeNav }) {
@@ -14,7 +15,7 @@ function TeacherNavigation({ activeNav }) {
 
             <div className='LearnerNavigation-list-content'>
 
-                <a href='/Teacher-dashboard'>
+                <a href='/Admin-dashboard'>
                     <div className={
                         activeNav === 'home' ?
                             'LearnerNavigation-list-el-active'
@@ -26,19 +27,19 @@ function TeacherNavigation({ activeNav }) {
                     </div>
                 </a>
 
-                <a href='/Teacher-classes'>
+                <a href='/Admin-school'>
                     <div className={
-                        activeNav === 'classes' ?
+                        activeNav === 'school' ?
                             'LearnerNavigation-list-el-active'
                             : 'LearnerNavigation-list-el'}>
-                        <FaChalkboardTeacher
+                        <MdSchool
                             size={25}
                             className='LearnerNavigation-list-icon' />
-                        <div className='LearnerNavigation-list-label'>Classes</div>
+                        <div className='LearnerNavigation-list-label'>School</div>
                     </div>
                 </a>
 
-                <a href='/Learner-calendar'>
+                <a href='/Admin-calendar'>
                     <div className={
                         activeNav === 'calendar' ?
                             'LearnerNavigation-list-el-active'
@@ -50,7 +51,43 @@ function TeacherNavigation({ activeNav }) {
                     </div>
                 </a>
 
-                <a href='/Teacher-account'>
+                <a href='/Admin-students'>
+                    <div className={
+                        activeNav === 'students' ?
+                            'LearnerNavigation-list-el-active'
+                            : 'LearnerNavigation-list-el'}>
+                        <SiGoogleclassroom
+                            size={25}
+                            className='LearnerNavigation-list-icon' />
+                        <div className='LearnerNavigation-list-label'>Students</div>
+                    </div>
+                </a>
+
+                <a href='/Admin-teachers'>
+                    <div className={
+                        activeNav === 'teachers' ?
+                            'LearnerNavigation-list-el-active'
+                            : 'LearnerNavigation-list-el'}>
+                        <GiTeacher
+                            size={25}
+                            className='LearnerNavigation-list-icon' />
+                        <div className='LearnerNavigation-list-label'>Teachers</div>
+                    </div>
+                </a>
+
+                <a href='/Admin-messages'>
+                    <div className={
+                        activeNav === 'messages' ?
+                            'LearnerNavigation-list-el-active'
+                            : 'LearnerNavigation-list-el'}>
+                        <SiGooglemessages
+                            size={25}
+                            className='LearnerNavigation-list-icon' />
+                        <div className='LearnerNavigation-list-label'>Messages</div>
+                    </div>
+                </a>
+
+                <a href='/Admin-account'>
                     <div className={
                         activeNav === 'account' ?
                             'LearnerNavigation-list-el-active'

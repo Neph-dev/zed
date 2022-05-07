@@ -11,7 +11,7 @@ function MyCoursesComponent() {
     return (
         <section id='myCourses'>
 
-            <div className='myCourses-title'>
+            <div className='PageCenteredTitle'>
                 Subjects
             </div>
             <div className='cards-list'>
