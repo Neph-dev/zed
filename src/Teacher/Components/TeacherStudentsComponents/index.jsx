@@ -38,7 +38,7 @@ function TeacherStudentsComponents() {
                     <BiArrowBack
                         title='back'
                         size={25}
-                        className='Course-BiArrowBack' />
+                        className='Page-back-btn' />
                 </a>
 
                 <div className='Course-title'>

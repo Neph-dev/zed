@@ -40,11 +40,6 @@ function LoginAs() {
 
     return (
         <div id='Pages'>
-            <div className='Page-top-left-logo'>
-                <Link to='/'>
-                    Zed
-                </Link>
-            </div>
 
             <div className='PageTitle'>
                 Login to your profile
@@ -56,7 +51,6 @@ function LoginAs() {
             <div className='loginAs-cardList'>
                 {widgetList.map((widget) => (
                     <a
-                        title={widget.title}
                         href={widget.to}
                         className='loginAs-card'>
 

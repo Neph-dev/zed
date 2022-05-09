@@ -49,3 +49,44 @@ export const TeacherSubjects = [
         numberOfStudents: 50,
     },
 ]
+
+export const Students = [
+    {
+        id: 1,
+        fullName: 'Amber Rue'
+    },
+    {
+        id: 2,
+        fullName: 'Reich Dupel'
+    },
+    {
+        id: 3,
+        fullName: 'Gentil Fota'
+    },
+    {
+        id: 4,
+        fullName: 'Ruben Salam'
+    },
+    {
+        id: 5,
+        fullName: 'Emeric JI'
+    },
+    {
+        id: 6,
+        fullName: 'Justin Fish'
+    },
+]
+export const Teachers = [
+    {
+        id: 2,
+        fullName: 'Reich Dupel'
+    },
+    {
+        id: 3,
+        fullName: 'Gentil Fota'
+    },
+    {
+        id: 4,
+        fullName: 'Ruben Salam'
+    },
+]
