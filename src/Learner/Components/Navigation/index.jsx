@@ -11,84 +11,104 @@ import { SiGooglemessages } from 'react-icons/si';
 import { MdAccountCircle, MdOutlineSubject } from 'react-icons/md';
 
 
-
 function LearnerNavigation({ activeNav }) {
+
+    const widgetList = [
+        {
+            id: 1,
+            to: '/Learner-dashboard',
+            title: 'home',
+            icon: <HiHome
+                size={25}
+                className='LearnerNavigation-list-icon' />,
+            className:
+                activeNav === 'home' ?
+                    'LearnerNavigation-list-el-active'
+                    : 'LearnerNavigation-list-el'
+
+        },
+        {
+            id: 2,
+            to: '/Learner-subjects',
+            title: 'subjects',
+            icon: <MdOutlineSubject
+                size={25}
+                className='LearnerNavigation-list-icon' />,
+            className:
+                activeNav === 'subjects' ?
+                    'LearnerNavigation-list-el-active'
+                    : 'LearnerNavigation-list-el'
+
+        },
+        {
+            id: 3,
+            to: '/Learner-calendar',
+            title: 'calendar',
+            icon: <BsCalendar2Range
+                size={25}
+                className='LearnerNavigation-list-icon' />,
+            className:
+                activeNav === 'calendar' ?
+                    'LearnerNavigation-list-el-active'
+                    : 'LearnerNavigation-list-el'
+
+        },
+        {
+            id: 4,
+            to: '/Learner-marks',
+            title: 'marks',
+            icon: <GiCheckMark
+                size={25}
+                className='LearnerNavigation-list-icon' />,
+            className:
+                activeNav === 'marks' ?
+                    'LearnerNavigation-list-el-active'
+                    : 'LearnerNavigation-list-el'
+
+        },
+        {
+            id: 5,
+            to: '/Learner-messages',
+            title: 'messages',
+            icon: <SiGooglemessages
+                size={25}
+                className='LearnerNavigation-list-icon' />,
+            className:
+                activeNav === 'messages' ?
+                    'LearnerNavigation-list-el-active'
+                    : 'LearnerNavigation-list-el'
+
+        },
+        {
+            id: 6,
+            to: '/Learner-account',
+            title: 'account',
+            icon: <MdAccountCircle
+                size={25}
+                className='LearnerNavigation-list-icon' />,
+            className:
+                activeNav === 'account' ?
+                    'LearnerNavigation-list-el-active'
+                    : 'LearnerNavigation-list-el'
+
+        },
+    ]
+
     return (
         <div id='LearnerNavigation'>
 
             <div className='LearnerNavigation-list-content'>
-
-                <a href='/'>
-                    <div className={
-                        activeNav === 'home' ?
-                            'LearnerNavigation-list-el-active'
-                            : 'LearnerNavigation-list-el'}>
-                        <HiHome
-                            size={25}
-                            className='LearnerNavigation-list-icon' />
-                        <div className='LearnerNavigation-list-label'>Home</div>
-                    </div>
-                </a>
-
-                <a href='/Learner-subjects'>
-                    <div className={
-                        activeNav === 'subjects' ?
-                            'LearnerNavigation-list-el-active'
-                            : 'LearnerNavigation-list-el'}>
-                        <MdOutlineSubject
-                            size={25}
-                            className='LearnerNavigation-list-icon' />
-                        <div className='LearnerNavigation-list-label'>Subjects</div>
-                    </div>
-                </a>
-
-                <a href='/Learner-calendar'>
-                    <div className={
-                        activeNav === 'calendar' ?
-                            'LearnerNavigation-list-el-active'
-                            : 'LearnerNavigation-list-el'}>
-                        <BsCalendar2Range
-                            size={25}
-                            className='LearnerNavigation-list-icon' />
-                        <div className='LearnerNavigation-list-label'>Calendar</div>
-                    </div>
-                </a>
-
-                <a href='/Learner-marks'>
-                    <div className={
-                        activeNav === 'marks' ?
-                            'LearnerNavigation-list-el-active'
-                            : 'LearnerNavigation-list-el'}>
-                        <GiCheckMark
-                            size={25}
-                            className='LearnerNavigation-list-icon' />
-                        <div className='LearnerNavigation-list-label'>Marks</div>
-                    </div>
-                </a>
-
-                <a href='/Learner-messages'>
-                    <div className={
-                        activeNav === 'messages' ?
-                            'LearnerNavigation-list-el-active'
-                            : 'LearnerNavigation-list-el'}>
-                        <SiGooglemessages
-                            size={25}
-                            className='LearnerNavigation-list-icon' />
-                        <div className='LearnerNavigation-list-label'>Message</div>
-                    </div>
-                </a>
-
-                <a href='/Learner-account'>
-                    <div className={
-                        activeNav === 'account' ?
-                            'LearnerNavigation-list-el-active'
-                            : 'LearnerNavigation-list-el'}>
-                        <MdAccountCircle
-                            size={25}
-                            className='LearnerNavigation-list-icon' />
-                        <div className='LearnerNavigation-list-label'>Account</div>
-                    </div>
-                </a>
+                {widgetList.map((widget) => (
+                    <a key={widget.id} title={widget.title} href={widget.to}>
+                        <div className={widget.className}>
+                            {widget.icon}
+                            <div className='LearnerNavigation-list-label'>
+                                {widget.title}
+                            </div>
+                        </div>
+                    </a>
+                ))
+                }
 
             </div>
 

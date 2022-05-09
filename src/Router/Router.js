@@ -1,17 +1,21 @@
 /*
-  Using react-router-dom@v5  
+Using react-router-dom@v5  
   Declare and set the exact path to every page component.
 */
 
 import { BrowserRouter as Routers, Route, Switch } from 'react-router-dom';
 
+// Import authentication components.
+import LoginAs from '../Auth/Pages/LoginAs';
+
 //import the admin pages.
 import AdminAccount from '../Super_Admin/Pages/Account';
 import AdminHome from '../Super_Admin/Pages/Home';
 import AdminGrade from '../Super_Admin/Pages/Grade';
+import AdminGradeTeachers from '../Super_Admin/Pages/GradeTeachers';
+import AdminGradeStudents from '../Super_Admin/Pages/GradeStudents';
 import AdminSchool from '../Super_Admin/Pages/School';
 import AdminSubject from '../Super_Admin/Pages/Subject';
-
 
 //import the learner pages.
 import LearnerAccount from '../Learner/Pages/Account';
@@ -39,8 +43,6 @@ import TeacherStudentAssign from '../Teacher/Pages/StudentAssignments';
 import TeacherStudentMarks from '../Teacher/Pages/StudentMarks';
 import TeacherStudentProfile from '../Teacher/Pages/StudentProfile';
 
-// Import authentication components.
-
 
 
 export default function Router() {
@@ -48,13 +50,17 @@ export default function Router() {
     <Routers>
         <Switch>           
             
+            <Route exact path='/' component={LoginAs} />
+            
             <Route exact path='/Admin-dashboard' component={AdminHome} />
             <Route exact path='/Admin-account' component={AdminAccount} />
             <Route exact path='/Admin-grade' component={AdminGrade} />
+            <Route exact path='/Admin-grade-students' component={AdminGradeStudents} />
+            <Route exact path='/Admin-grade-teachers' component={AdminGradeTeachers} />
             <Route exact path='/Admin-school' component={AdminSchool} />
             <Route exact path='/Admin-subject' component={AdminSubject} />
 
-            <Route exact path='/' component={LearnerHome} />
+            <Route exact path='/Learner-dashboard' component={LearnerHome} />
             <Route exact path='/Learner-account' component={LearnerAccount} />
             <Route exact path='/Learner-calendar' component={LearnerCalendar} />
             <Route exact path='/Learner-course' component={LearnerCourse} />

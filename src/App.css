@@ -30,6 +30,17 @@
     text-align: center;
 }
 
+.Page-top-left-logo {
+    cursor: context-menu;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+.Page-top-left-logo a{
+    color: #126180;
+    text-decoration: none;
+}
+
 .cards-list {
     display: flex;
     flex-wrap: wrap;

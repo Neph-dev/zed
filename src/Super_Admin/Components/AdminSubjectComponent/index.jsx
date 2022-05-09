@@ -29,13 +29,6 @@ function AdminSubjectComponent() {
     ]
     const widgetList = [
         {
-            id: 0,
-            title: 'Students',
-            background: '#3b3c36',
-            icon: <SiGoogleclassroom size={50} className="radius-card-icon" />,
-            to: '/Teacher-students',
-        },
-        {
             id: 1,
             title: 'Discussion',
             background: '#5072a7',

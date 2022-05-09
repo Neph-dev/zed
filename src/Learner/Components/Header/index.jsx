@@ -35,8 +35,8 @@ function LearnerHeader({ activeNav }) {
 
                 <div className='LearnerHeader-list-container'>
                     <div className='LearnerHeader-logo_notifications' >
-                        <div className='LearnerHeader-logo'>
-                            <Link to='/'>
+                        <div className='Page-top-left-logo'>
+                            <Link to='/Learner-dashboard'>
                                 Zed
                             </Link>
                         </div>
