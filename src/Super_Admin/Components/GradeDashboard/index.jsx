@@ -15,14 +15,14 @@ function GradeDashboard() {
             id: 0,
             title: 'Teachers',
             icon: <GiTeacher size={50} className="radius-card-icon" />,
-            number: '4 teachers',
+            number: '3 teachers',
             to: '/Admin-grade-teachers',
         },
         {
             id: 1,
             title: 'Students',
             icon: <SiGoogleclassroom size={50} className="radius-card-icon" />,
-            number: '50 Students',
+            number: '6 Students',
             to: '/Admin-grade-students',
         },
     ]

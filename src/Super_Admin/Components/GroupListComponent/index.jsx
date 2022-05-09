@@ -3,7 +3,7 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 
 import { BiArrowBack } from 'react-icons/bi';
-import { AiOutlineSearch } from 'react-icons/ai';
+import { AiOutlineSearch, AiOutlinePlusCircle } from 'react-icons/ai';
 
 
 function GroupListComponent(
@@ -37,6 +37,11 @@ function GroupListComponent(
                     value={searchByName}
                     autoFocus={true} />
             </div>
+
+            <AiOutlinePlusCircle
+                size={30}
+                title='Add a new subject.'
+                className='GL-AiOutlinePlusCircle' />
 
             <div className='cards-list'>
                 {
