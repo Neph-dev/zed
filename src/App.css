@@ -1,3 +1,23 @@
+/* Icons */
+.ArrowBackIcon {
+    align-items: center;
+    color: #cccccc ;
+    display: flex;
+}
+.ArrowBackIcon:hover {
+    color: #126180;
+    cursor: pointer;
+}
+.ArrowForwardIcon {
+    align-items: center;
+    color: #cccccc ;
+    display: flex;
+}
+.ArrowForwardIcon:hover {
+    color: #126180;
+    cursor: pointer;
+}
+
 #Pages {
     height: 100vh;
     width: 100%;

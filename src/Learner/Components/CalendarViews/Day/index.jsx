@@ -1,14 +1,25 @@
 import React from 'react';
 
+import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
+
 import './Day.css';
+import '../Calendar.css';
+import SelectView from '../SelectView/SelectView';
 
 
 function Day() {
     return (
         <div id='Day'>
-            <div className='Day-day-label'>
-                Tuesday
+            <div className='calendar-header'>
+                <MdOutlineArrowBackIos size={30} className='ArrowBackIcon' />
+                <div className='calendar-title'>
+                    Tuesday
+                </div>
+                <MdOutlineArrowForwardIos size={30} className='ArrowForwardIcon' />
             </div>
+
+            <SelectView />
+
             <div className='Day-calendar'>
                 <div className='Day-hour_activity'>
                     <div className='Day-hour'>8 am</div>

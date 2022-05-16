@@ -8,15 +8,6 @@
     width: 100%;
 }
 
-.Day-day-label {
-    font-size: 25px;
-    font-weight: normal;
-    letter-spacing: 2px;
-    margin-bottom: 2rem;
-    text-transform: capitalize;
-    text-align: center;
-}
-
 .Day-calendar {
     align-items: center;
     color: #000000;

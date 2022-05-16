@@ -1,0 +1,55 @@
+.calendar-header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto auto 2rem auto;
+    width: 80%;
+}
+
+.calendar-title {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.calendar-views {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    justify-content: space-around;
+    margin: auto 10rem 2rem auto;
+    width: 20%;
+}
+
+.calendar-views button {
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    border-radius: 15px;
+    background: #283e51;
+    color: #ffffff;
+    display: flex;
+    font-size: 14px;
+    padding: 0.5rem;
+}
+.calendar-views .active{
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    border-radius: 15px;
+    background: #4e5180;
+    color: #ffffff;
+    display: flex;
+    font-size: 14px;
+    padding: 0.5rem;
+}
+.calendar-views button:hover {
+    background: #4e5180;
+    cursor: context-menu;
+}
