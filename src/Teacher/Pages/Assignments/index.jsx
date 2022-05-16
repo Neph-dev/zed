@@ -20,7 +20,7 @@ function TeacherAssignments() {
 
             <div className='PagesContent'>
 
-                <AssignmentFolders />
+                <AssignmentFolders to={'/Teacher-assignment-folder'} />
 
             </div>
 

@@ -6,6 +6,7 @@ import { BiArrowBack } from 'react-icons/bi';
 import { TiMessages } from 'react-icons/ti';
 import { RiMarkPenFill } from 'react-icons/ri';
 import { GiFullFolder } from 'react-icons/gi';
+import { IoIosFiling } from 'react-icons/io';
 
 import './CourseComponent.css';
 
@@ -18,7 +19,7 @@ function CourseComponent() {
             title: 'Materials',
             background: '#966fd6',
             icon: <GiFullFolder size={50} className="radius-card-icon" />,
-            to: '/Learner-course-marks',
+            to: '/Learner-materials',
         },
         {
             id: 1,
@@ -29,6 +30,13 @@ function CourseComponent() {
         },
         {
             id: 2,
+            title: 'Assignments',
+            background: '#a4c639',
+            icon: <IoIosFiling size={50} className="radius-card-icon" />,
+            to: '/Learner-assignments',
+        },
+        {
+            id: 3,
             title: 'Marks',
             background: '#6eaea1',
             icon: <RiMarkPenFill size={50} className="radius-card-icon" />,
@@ -39,12 +47,12 @@ function CourseComponent() {
     return (
         <div id='Course'>
 
-            <div className='Course-back_title'>
+            <div className='back_title'>
                 <a href='/Learner-subjects'>
                     <BiArrowBack
                         title='back'
                         size={25}
-                        className='Course-BiArrowBack' />
+                        className='GoBackIcon' />
                 </a>
 
                 <div className='Course-title'>

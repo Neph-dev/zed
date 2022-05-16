@@ -4,14 +4,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 6rem;
+    margin-left: 4.8rem;
 }
 .Greeting-greeting {
+    background: #ffa700;
+    color: #ffffff;
     font-size: 22px;
     letter-spacing: 1px;
+    padding: 4rem;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 80px;
 }
 .Greeting-date {
-    font-size: 22px;
+    color: #000000;
+    cursor: context-menu;
+    font-size: 20px;
     letter-spacing: 1px;
-    margin-right: 2rem; 
+    margin-right: 2rem;
+    text-decoration: underline;
 }

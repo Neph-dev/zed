@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { useHistory } from "react-router-dom";
+
 import {
     AiOutlineSearch,
     AiTwotoneFilePdf,
@@ -9,14 +11,15 @@ import {
 } from 'react-icons/ai';
 import { BiArrowBack, BiQuestionMark } from 'react-icons/bi';
 import { FaFileVideo } from 'react-icons/fa';
-import ConfirmDelete from '../../../Components/ConfirmDelete';
 
-import { Materials } from '../../Mock';
+import ConfirmDelete from '../ConfirmDelete';
 
-import './TeacherMaterials.css';
+import './MaterialList.css';
 
 
-function TeacherMaterialList() {
+function MaterialList({ Materials }) {
+
+    const history = useHistory();
 
     const [deleting, setDeleting] = useState(false)
 
@@ -43,13 +46,12 @@ function TeacherMaterialList() {
     return (
         <div id='Courses'>
 
-            <div className='Course-back_title'>
-                <a href='/Teacher-subject-dashboard'>
-                    <BiArrowBack
-                        title='back'
-                        size={25}
-                        className='Course-BiArrowBack' />
-                </a>
+            <div className='back_title'>
+                <BiArrowBack
+                    title='back'
+                    size={25}
+                    onClick={() => history.goBack()}
+                    className='GoBackIcon' />
                 <div className='Course-title'>
                     Mathmatics Materials
                 </div>
@@ -122,4 +124,4 @@ function TeacherMaterialList() {
     );
 }
 
-export default TeacherMaterialList;
+export default MaterialList;

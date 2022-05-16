@@ -9,9 +9,12 @@ function Greeting() {
             <div className='Greeting-greeting'>
                 Hello Zed!
             </div>
-            <div className='Greeting-date'>
+            <a
+                href='https://www.britannica.com/on-this-day'
+                target='_blank' rel="noreferrer"
+                title='This Day in History' className='Greeting-date'>
                 Tuesday, April 19 2022
-            </div>
+            </a>
         </div>
     );
 }

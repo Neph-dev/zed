@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 
-import { MaterialListData } from '../../Mock';
+import { MaterialListData } from '../../../Teacher/Mock';
 
+import LearnerHeader from '../../Components/Header';
 import MaterialList from '../../../Components/MaterialList';
-import TeacherHeader from '../../Components/Header';
 
 
-function TeacherMaterials() {
+function LearnerMaterials() {
 
-    const activeNav = 'classes'
+    const activeNav = 'subjects';
 
     //automatically scroll to top
     useEffect(() => {
@@ -16,17 +16,15 @@ function TeacherMaterials() {
     }, []);
 
     return (
-        <div id='Pages'>
+        <div id="Pages">
 
-            <TeacherHeader activeNav={activeNav} />
+            <LearnerHeader activeNav={activeNav} />
 
-            <div className='PagesContent'>
-
+            <div className="PagesContent">
                 <MaterialList Materials={MaterialListData} />
-
             </div>
         </div>
     );
 }
 
-export default TeacherMaterials;
+export default LearnerMaterials;

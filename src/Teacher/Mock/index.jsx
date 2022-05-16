@@ -71,7 +71,7 @@ export const Students = [
     },
 ]
 
-export const Materials = [
+export const MaterialListData = [
     {
         id: 1,
         lastUpdate: '4 May 2022',

@@ -19,6 +19,8 @@ import AdminSubject from '../Super_Admin/Pages/Subject';
 
 //import the learner pages.
 import LearnerAccount from '../Learner/Pages/Account';
+import LearnerAssignments from '../Learner/Pages/Assignments';
+import LearnerAssignmentsFolder from '../Learner/Pages/AssignmentsFolder';
 import LearnerCalendar from '../Learner/Pages/Calendar';
 import LearnerCourse from '../Learner/Pages/Course';
 import CourseMarks from '../Learner/Pages/CourseMarks';
@@ -27,6 +29,7 @@ import LearnerDiscussion from '../Learner/Pages/Discussion';
 import LearnerHome from '../Learner/Pages/Home';
 import LearnerMarks from '../Learner/Pages/Marks';
 import LearnerMessages from '../Learner/Pages/Messages';
+import LearnerMaterials from '../Learner/Pages/Materials';
 
 //import the teacher pages.
 import TeacherAccount from '../Teacher/Pages/Account';
@@ -62,12 +65,15 @@ export default function Router() {
 
             <Route exact path='/Learner-dashboard' component={LearnerHome} />
             <Route exact path='/Learner-account' component={LearnerAccount} />
+            <Route exact path='/Learner-assignments' component={LearnerAssignments} />
+            <Route exact path='/Learner-assignment-folder' component={LearnerAssignmentsFolder} />
             <Route exact path='/Learner-calendar' component={LearnerCalendar} />
             <Route exact path='/Learner-course' component={LearnerCourse} />
             <Route exact path='/Learner-course-marks' component={CourseMarks} />
             <Route exact path='/Learner-course-discussion' component={LearnerDiscussion} />
             <Route exact path='/Learner-subjects' component={LearnerSubjects} />
             <Route exact path='/Learner-marks' component={LearnerMarks} />
+            <Route exact path='/Learner-materials' component={LearnerMaterials} />
             <Route exact path='/Learner-messages' component={LearnerMessages} />
 
             <Route exact path='/Teacher-assignments' component={TeacherAssignments} />

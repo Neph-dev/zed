@@ -9,20 +9,20 @@ import { GoFileDirectory } from 'react-icons/go';
 import './AssignFolders.css';
 
 
-function AssignmentFolders() {
+function AssignmentFolders({ to }) {
 
     const history = useHistory();
 
     return (
         <div id='Courses'>
 
-            <div className='Course-back_title'>
+            <div className='back_title'>
                 <div>
                     <BiArrowBack
                         onClick={() => history.goBack()}
                         title='back'
                         size={25}
-                        className='Course-BiArrowBack' />
+                        className='GoBackIcon' />
                 </div>
                 <div className='Course-title'>
                     Assignment Folders
@@ -35,7 +35,7 @@ function AssignmentFolders() {
                 className='AF-AiOutlinePlusCircle' />
 
             <div className='cards-list'>
-                <a href='/Teacher-assignment-folder' className='AF-folderIcon_Name'>
+                <a href={to} className='AF-folderIcon_Name'>
                     <GoFileDirectory
                         size={55}
                         className='AF-GoFileDirectory' />

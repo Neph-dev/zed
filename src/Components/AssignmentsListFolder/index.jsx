@@ -16,13 +16,13 @@ function AssignmentsListFolder() {
     return (
         <div id='Courses'>
 
-            <div className='Course-back_title'>
+            <div className='back_title'>
                 <div>
                     <BiArrowBack
                         onClick={() => history.goBack()}
                         title='back'
                         size={25}
-                        className='Course-BiArrowBack' />
+                        className='GoBackIcon' />
                 </div>
                 <div className='Course-title'>
                     Assignments
