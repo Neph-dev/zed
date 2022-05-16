@@ -18,34 +18,37 @@ import AdminSchool from '../Super_Admin/Pages/School';
 import AdminSubject from '../Super_Admin/Pages/Subject';
 
 //import the learner pages.
-import LearnerAccount from '../Learner/Pages/Account';
-import LearnerAssignments from '../Learner/Pages/Assignments';
-import LearnerAssignmentsFolder from '../Learner/Pages/AssignmentsFolder';
-import LearnerCalendar from '../Learner/Pages/Calendar';
-import LearnerCourse from '../Learner/Pages/Course';
-import CourseMarks from '../Learner/Pages/CourseMarks';
-import LearnerSubjects from '../Learner/Pages/Subjects';
-import LearnerDiscussion from '../Learner/Pages/Discussion';
-import LearnerHome from '../Learner/Pages/Home';
-import LearnerMarks from '../Learner/Pages/Marks';
-import LearnerMessages from '../Learner/Pages/Messages';
-import LearnerMaterials from '../Learner/Pages/Materials';
+import { 
+  LearnerHome, 
+  LearnerAccount, 
+  LearnerAssignments, 
+  LearnerAssignmentsFolder,
+  LearnerCalendar,
+  LearnerCourse,
+  CourseMarks,
+  LearnerSubjects,
+  LearnerDiscussion,
+  LearnerMarks,
+  LearnerMessages,
+  LearnerMaterials
+} from '../Learner/Pages';
 
 //import the teacher pages.
-import TeacherAccount from '../Teacher/Pages/Account';
-import TeacherAssignments from '../Teacher/Pages/Assignments';
-import TeacherAssignmentsFolder from '../Teacher/Pages/AssignmentsFolder';
-import TeacherClasses from '../Teacher/Pages/Classes';
-import TeacherDiscussion from '../Teacher/Pages/Discussion';
-import TeacherHome from '../Teacher/Pages/Home';
-import TeacherMaterials from '../Teacher/Pages/Materials';
-import TeacherSubjects from '../Teacher/Pages/Subjects';
-import TeacherSubjectDashboard from '../Teacher/Pages/SubjectDashboard';
-import TeacherStudents from '../Teacher/Pages/Students';
-import TeacherStudentAssign from '../Teacher/Pages/StudentAssignments';
-import TeacherStudentMarks from '../Teacher/Pages/StudentMarks';
-import TeacherStudentProfile from '../Teacher/Pages/StudentProfile';
-
+import { 
+  TeacherHome, 
+  TeacherAccount, 
+  TeacherAssignments, 
+  TeacherAssignmentsFolder,
+  TeacherClasses,
+  TeacherDiscussion,
+  TeacherMaterials,
+  TeacherSubjects,
+  TeacherSubjectDashboard,
+  TeacherStudents,
+  TeacherStudentAssign,
+  TeacherStudentMarks,
+  TeacherStudentProfile,
+} from '../Teacher/Pages';
 
 
 export default function Router() {

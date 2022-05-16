@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import { useHistory } from "react-router-dom";
 
+import { FileUploader } from "react-drag-drop-files";
+
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { BiArrowBack } from 'react-icons/bi';
 import { GoFileDirectory } from 'react-icons/go';
@@ -10,6 +12,9 @@ import { GoFileDirectory } from 'react-icons/go';
 function AssignmentsListFolder() {
 
     const history = useHistory();
+
+    const fileTypes = ["JPEG", "PNG", "GIF", "PDF"];
+    const [file, setFile] = useState();
 
     const [deleting, setDeleting] = useState(false)
 
@@ -26,6 +31,26 @@ function AssignmentsListFolder() {
                 </div>
                 <div className='Course-title'>
                     Assignments
+                </div>
+            </div>
+
+            <div>
+                <div className='PageCenteredTitle'>
+                    Upload
+                </div>
+                <div className='fileUploader'>
+                    <div style={{ marginTop: '2rem' }}>
+                        <FileUploader
+                            multiple={true}
+                            handleChange={() => { }}
+                            name="file"
+                            types={fileTypes}
+                            className='FileUploader'
+                        />
+                        <p className='fileUploader-label'>
+                            {file ? `File name: ${file[0].name}` : "no files uploaded yet"}
+                        </p>
+                    </div>
                 </div>
             </div>
 

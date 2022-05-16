@@ -266,3 +266,20 @@
     padding: .3rem;
     z-index: 99999;
 }
+
+/* file uploader */
+.FileUploader {
+    display: flex; 
+    justify-content: center; 
+    margin: auto;
+    width: 10rem; 
+}
+.fileUploader {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.fileUploader-label {
+    text-align: center;
+}

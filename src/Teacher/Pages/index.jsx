@@ -1,0 +1,13 @@
+export { default as TeacherHome } from "./Home";
+export { default as TeacherAccount } from "./Account";
+export { default as TeacherAssignments } from "./Assignments";
+export { default as TeacherAssignmentsFolder } from "./AssignmentsFolder";
+export { default as TeacherClasses } from "./Classes";
+export { default as TeacherDiscussion } from "./Discussion";
+export { default as TeacherMaterials } from "./Materials";
+export { default as TeacherStudentAssign } from "./StudentAssignments";
+export { default as TeacherStudentMarks } from "./StudentAssignments";
+export { default as TeacherStudentProfile } from "./StudentProfile";
+export { default as TeacherStudents } from "./Students";
+export { default as TeacherSubjectDashboard } from "./SubjectDashboard";
+export { default as TeacherSubjects } from "./Subjects";
