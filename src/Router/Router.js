@@ -9,13 +9,15 @@ import { BrowserRouter as Routers, Route, Switch } from 'react-router-dom';
 import LoginAs from '../Auth/Pages/LoginAs';
 
 //import the admin pages.
-import AdminAccount from '../Super_Admin/Pages/Account';
-import AdminHome from '../Super_Admin/Pages/Home';
-import AdminGrade from '../Super_Admin/Pages/Grade';
-import AdminGradeTeachers from '../Super_Admin/Pages/GradeTeachers';
-import AdminGradeStudents from '../Super_Admin/Pages/GradeStudents';
-import AdminSchool from '../Super_Admin/Pages/School';
-import AdminSubject from '../Super_Admin/Pages/Subject';
+import {
+  AdminAccount,
+  AdminHome,
+  AdminGrade,
+  AdminGradeTeachers,
+  AdminGradeStudents,
+  AdminSchool,
+  AdminSubject,
+} from '../Super_Admin/Pages';
 
 //import the learner pages.
 import { 
